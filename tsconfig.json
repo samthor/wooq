@@ -25,14 +25,7 @@
     // modern TS stuff that allows lit-element to work
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": true
   },
-  "include": [
-    "*.js",
-    "**/*.js",
-    "*.ts",
-    "**/*.ts",
-    "*.tsx",
-    "**/*.tsx",
-  ],
+  "include": ["*.js", "**/*.js", "*.ts", "**/*.ts", "*.tsx", "**/*.tsx", "*.d.ts", "**/*.d.ts"]
 }

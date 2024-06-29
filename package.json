@@ -1,13 +1,19 @@
 {
+  "name": "wooq",
   "devDependencies": {
     "@types/node": "^20.3.1",
+    "esbuild": "^0.21.5",
     "tsx": "^4.15.6"
   },
   "type": "module",
   "scripts": {
-    "test": "tsx test/"
+    "test": "tsx test/",
+    "prepublishOnly": "esbuild --bundle lib/mockable.ts --outfile=dist.js --format=esm"
   },
-  "private": true,
+  "main": "dist.js",
+  "exports": {
+    ".": "./dist.js"
+  },
   "author": "Sam Thorogood <sam.thorogood@gmail.com>",
   "license": "Apache-2.0"
 }
