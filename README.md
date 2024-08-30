@@ -1,5 +1,7 @@
 wooq lets you mock your JS/TS code for tests.
 
+TODO(me): publish on npm
+
 It requires you to modify existing files by adding annotations allowing code to be mocked.
 Some people don't like this, but you can set `skip` outside tests to make the code basically a no-op.
 
